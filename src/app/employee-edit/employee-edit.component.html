@@ -1,0 +1,40 @@
+<div class="container my-5">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2 class="mb-3">Employee Edit</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <form #f="ngForm" (ngSubmit)="editEmployee()">
+                <div class="mb-3">
+                    <label for="id" class="form-label">Id</label>
+                    <input type="number" class="form-control" id="id" name="id" [(ngModel)]="employee.id" disabled="true">
+                </div>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" name="name" [(ngModel)]="employee.name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" [(ngModel)]="employee.email">
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="number" class="form-control" id="phone" name="phone" [(ngModel)]="employee.phone">
+                </div>
+                <div class="mb-3">
+                    <label for="salary" class="form-label">Salary</label>
+                    <input type="number" class="form-control" id="salary" name="salary" [(ngModel)]="employee.salary">
+                </div>
+                <div class="mb-3">
+                    <label for="department" class="form-label">Department</label>
+                    <input type="text" class="form-control" id="department" name="department" [(ngModel)]="employee.department">
+                </div>
+                <button type="submit" class="btn btn-primary">Edit</button>
+              </form>
+        </div>
+    </div>
+</div>
+
+
